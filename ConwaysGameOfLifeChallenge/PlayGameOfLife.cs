@@ -32,7 +32,7 @@ namespace ConwaysGameOfLifeChallenge
                         PrintBoard(board2);
                         break;
                 }
-                BoardService.AgeOne(ref board1, ref board2);
+                BoardService.AgeOne(board1, board2);
                 board1.UseNow = !board1.UseNow;
                 board2.UseNow = !board2.UseNow;
                 Console.ReadKey();

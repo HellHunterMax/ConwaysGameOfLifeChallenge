@@ -32,13 +32,13 @@ namespace ConwaysGameOfLifeChallenge.Factories
             for (int i = 0; i < board.Cells.Count; i++)
             {
                 Cell cell = board.Cells[i];
-                AddNeighbours(ref cell, ref board);
+                AddNeighbours(cell, board);
             }
 
             return board;
         }
 
-        private static void AddNeighbours(ref Cell cell, ref Board board)
+        private static void AddNeighbours(Cell cell, Board board)
         {
             int number = cell.Id;
             int size = board.Size;

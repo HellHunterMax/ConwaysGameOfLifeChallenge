@@ -6,7 +6,7 @@ namespace ConwaysGameOfLifeChallenge.Service
     public static class BoardService
     {
 
-        public static void AgeOne(ref Board board1, ref Board board2)
+        public static void AgeOne(Board board1, Board board2)
         {
             Board oldBoard = board1.UseNow ? board1 : board2;
             Board newBoard = board1.UseNow ? board2 : board1;
